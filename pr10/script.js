@@ -75,9 +75,9 @@
 //   const myNumber = calc(10)
 //   console.log(myNumber)
 
-function calc(number1, number2){
-    const result =(number1 ** 2, number2 ** 4)
-    return result
-}
-const myNumber = calc(10,20)
-console.log(myNumber)
+// function calc(number1, number2){
+//     const result =(number1 ** 2, number2 ** 4)
+//     return result
+// }
+// const myNumber = calc(10,20)
+// console.log(myNumber)
