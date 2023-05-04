@@ -17,7 +17,7 @@
    // innerHTML: "<p>hello</p>"
 //}
 //main.innerHTML = "<section></section>
-const main = document.querySelector("main")
+//const main = document.querySelector("main")
 //main.innerHTML += "<p></p>"
 
 //for (let i = 1; i <= 100; i++) {
@@ -80,34 +80,133 @@ const main = document.querySelector("main")
 //}
 
 
-const products = [
-    {
-        name: "Iphone 14",
-        price: 70000
-    },
-    {
-        name: "Iphone 13",
-        price: 60000
-    },
-    {
-        name: "Samsung S30",
-        price: 65000
-    }
-]
+// const products = [
+//     {
+//         name: "Iphone 14",
+//         price: 70000
+//     },
+//     {
+//         name: "Iphone 13",
+//         price: 60000
+//     },
+//     {
+//         name: "Samsung S30",
+//         price: 65000
+//     }
+// ]
 
 
 
 
 
-for (let i = 0; i < products.length; i++) {
+// for (let i = 0; i < products.length; i++) {
     
        
    
    
-   main.innerHTML += `
-   <div class="product">
-   <h5>${products[i].name}</h5>
-   <p>${products[i]}.price}</p>
-   </div>`
-   }
+//    main.innerHTML += `
+//    <div class="product">
+//    <h5>${products[i].name}</h5>
+//    <p>${products[i]}.price}</p>
+//    </div>`
+//    }
    
+
+const users = [
+  {
+      email: "test@gmail.com",
+      login: "Test"
+  },
+  {
+      email: "starta@gmail.com",
+      login: "Starta University"
+  },
+  {
+      email: "admin@gmail.com",
+      login: "Admin"
+  },
+
+]
+const usersContainer = document.querySelector(".users-container")
+
+
+for (let i = 0; i < users.length; i++) {
+  
+  usersContainer.innerHTML +=
+  `<div class="user">
+  <h5>${users[i].email}</h5>
+  <p>${users[i].login}</p>
+  </div>
+  `
+  
+}
+users.forEach(function(user){
+  usersContainer.innerHTML +=
+`<div class="user">
+<h5>{user.email}</h5>
+<p>{user.login}</p>
+</div>
+`})
+
+
+
+
+const posts = [
+  {
+      title: "My first title",
+      descr: "My descr",
+      author: "Test"
+  },
+  {
+      title: "My second title",
+      descr: "My second descr",
+      author: "Admin"
+  },
+  {
+      title: "My third title",
+      descr: "My third descr",
+      author: "Starta University"
+  },
+]
+
+const postsContainer = document.querySelector(".posts-container")
+
+
+for (let i = 0; i < posts.length; i++) {
+  
+  postsContainer.innerHTML +=
+
+`<div class="post">
+        <h6> ${posts[i].title} </h6>
+        <p> ${posts[i].author} </p>
+        <p> ${posts[i].descr} </p>
+    </div>`
+}
+
+
+posts.forEach(function(post) {
+  
+  postsContainer.innerHTML +=
+
+  `<div class="post">
+          <h6> ${posts.title} </h6>
+          <p> ${posts.author} </p>
+          <p> ${posts.descr} </p>
+      </div>`
+} )
+
+
+const numbers = [10, 30, 25, 60, 13]
+
+numbers.forEach(function(number){
+  console.log(number)
+})
+
+
+const names = ["Arsen" ,"Lera", "Natalia", "Lia"]
+names.forEach(function(name){
+  console.log("привет", name)
+})
+
+
+
