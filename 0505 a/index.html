@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title><Textarea</title>
+</head>
+<body>
+    <div>
+        <textarea cols="30" rows="10" maxlength="50"></textarea>
+     
+    </div>
+    
+    <p>
+        количество сммволов:
+        <span id="counter">50</span>
+        / 50
+      
+    </p>
+
+<script>
+    const text = document.querySelector("textarea");
+    const counter = document.querySelector("#counter");
+    text.addEventListener('input', function () {
+        const count = text.value.length;
+        counter.textContent = count;
+        text.addEventListener("input", function() {
+            const count = text.value.length;
+            counter.textContent = 50 - count;
+        })
+
+
+
+
+    });
+
+</script>
+
+<div class="wrapper">
+    <section>
+        <form action="">
+            <h3>расчёт</h3>
+            <input type="number" name="text">
+            >
+        </form>
+    </section>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

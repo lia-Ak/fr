@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About company</title>
+
+<style>
+    body{
+        transition: 4s;
+    }
+    .is-dark {
+        background: rgb(22, 22, 22);
+        color: aliceblue;
+        transition: 2s linear;
+    }
+</style>
+
+<script>
+function toggle_theme(){
+    const target = document.querySelector
+    (`body`);
+    target.classList.toggle(`is-dark`);
+}
+</script>
+
+
+
+</head>
+<body>
+    
+    <h1>
+        About company
+        <button onclick="toggle_theme()">
+            сменить цв/тему
+            
+            
+        </button>
+        
+    </h1>
+
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum perferendis mollitia perspiciatis eum qui repellendus laudantium, unde accusantium voluptas facilis voluptatum, quam impedit odio iusto. Quo libero corporis optio!
+    </p>
+
+    
+</body>
+</html>
