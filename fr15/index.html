@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    
+    <section class="form-wrapper">
+        <form>
+            <input type="text" placeholder="Название" class="product-name">
+            <input type="number" placeholder="Цена" class="product-price">
+            <input type="submit" value="Добавить">
+        </form>
+    </section>
 
-<section class="form-wrapper">
-    <form>
-        <input type="text" placeholder="название" class="product-name">
-        <input type="number" placeholder="цена" class="product-price">
-        <input type="submit" value="добавить">
-    </form>
+    <section class="products-container">
+        
+    </section>
 
-</section>
+    <div class="notification">
+        <p class="notification-text">Ваш продукт успешно добавлен</p>
+    </div>
 
-<script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
+
+<!-- 
+    required - инпут обязателен к заполнению
+ -->
